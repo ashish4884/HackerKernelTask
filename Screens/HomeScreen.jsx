@@ -109,7 +109,7 @@ export default function HomeScreen({ navigation }) {
           value={searchQuery}
           onChangeText={setSearchQuery}
         />
-        <TouchableOpacity onPress={() => Alert.alert('Search clicked')}>
+        <TouchableOpacity >
           <Search size={24} color="#666" style={styles.searchIcon} />
         </TouchableOpacity>
       </View>

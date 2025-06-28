@@ -43,7 +43,7 @@ const LoginScreen = ({ navigation }) => {
       );
 
       await AsyncStorage.setItem('token', res.data.token);
-      login(); // Trigger AuthContext update
+      login(); 
     } catch (err) {
       Alert.alert('Login Failed', err.response?.data?.error || 'Unknown Error');
     }
